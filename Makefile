@@ -1,6 +1,6 @@
 CC=avr-gcc
 OBJCPY=avr-objcopy
-CFLAGS= -Wall -Os -std=c99 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p
+CFLAGS= -Wall -Wformat-overflow=0 -Os -std=c99 -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p
 LDFLAGS = -Wall -Os -Wl,--gc-sections,--relax -mmcu=atmega328p
 LIBS = -lm
 
