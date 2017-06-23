@@ -35,7 +35,7 @@
 #include <util/delay.h>
 
 
-//#define ADI
+#define ADI
 
 
 /* === ADF4355 CODE === */
@@ -299,7 +299,7 @@
         pllSendRegister(SI_CLK_ENABLE, 0xFF);      // Disable all output
         pllSendRegister(SI_PLL_INPUT_SRC, 0x0C);   // Use external clock on PLL-A & PLL-B
 
-        pllSendRegister(SI_CLK_CONTROL+0, 0x0F);   // Turn on CLK0 with PLL-A & 8mA
+        pllSendRegister(SI_CLK_CONTROL+0, 0x0F);   // Turn on CLK0 with PLL-A & 8mA (0x0F)
         pllSendRegister(SI_CLK_CONTROL+1, 0x84);   // Turn off
         pllSendRegister(SI_CLK_CONTROL+2, 0x84);   // Turn off
         pllSendRegister(SI_CLK_CONTROL+3, 0x84);   // Turn off
