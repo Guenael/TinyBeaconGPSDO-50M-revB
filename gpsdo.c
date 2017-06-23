@@ -213,3 +213,11 @@ _delay_ms(667);
 pllRfOutput(0);
 pllPA(0);
 */
+
+/* TEST 28.8MHz clock 
+pllSetFreq(28800000000000,0);
+pllUpdate(0);
+pllRfOutput(1);
+pllPA(1);
+while(1) { }
+*/
