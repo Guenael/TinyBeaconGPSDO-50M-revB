@@ -57,4 +57,4 @@ radio beacon, vhf, uhf, wspr, pi4, qrp, gpsdo
 - fix timing (email Bo)
 - test Si PLL
 - better PLL lib, freq calculation without reg. adjustment
-- Callsign / loc / freq. in one place# tinygpsdo
+- Callsign / loc / freq. in one place
